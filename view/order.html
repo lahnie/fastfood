@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
-    <link rel="icon" type="image/png" href="/fastfood/public/carritosfastfoodlogo.png"/>
+    <link rel="icon" type="image/png" href="/fastfood/public/carritosfastfoodlogo.png" />
     <link rel="stylesheet" href="../public/main.css">
     <link rel="stylesheet" href="../public/order.css">
     <title>Formulario de Cotización</title>
@@ -32,17 +32,18 @@
                             </div>
                             <div class="fgroup">
                                 <label for="inputRut"><b>Rut</b></label>
-                                <input type="text" class="finput" id="inputRut" placeholder="Doe" required>
+                                <input type="text" class="finput" id="inputRut" placeholder="XXXXXXXX-X" required
+                                    oninput="validarRut(this)">
                             </div>
 
                             <div class="fgroup">
                                 <label for="inputEmail"><b>Dirección</b></label>
-                                <input type="text" class="finput" id="inputAddress" placeholder="Direccion" required>
+                                <input type="text" class="finput" id="inputAddress" placeholder="Dirección" required>
                             </div>
 
                             <div class="fgroup">
                                 <label for="inputPhoneNumber"><b>Teléfono</b></label>
-                                <input type="number" class="finput" id="inputPhoneNumber" placeholder="Telefono"
+                                <input type="number" class="finput" id="inputPhoneNumber" placeholder="9XXXXXXXX"
                                     required>
                             </div>
                         </div>
