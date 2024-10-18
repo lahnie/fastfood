@@ -1,0 +1,51 @@
+.item{
+    padding: 1em;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #9c9c9c; 
+
+    .data{
+        display: inline-block;
+    }
+
+    .label{
+        font-weight: 700;
+        display: inline-block;
+    }
+
+    &.itemFull{
+        grid-template-columns: 1fr;
+        .label{
+            margin-bottom: 1em;
+        }
+    }
+    
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    
+    .viewTitle{
+        text-align: center;
+
+    }
+
+    .btnAnchor{
+        padding: 2em;
+        text-align: center;
+    }
+}
+
+.resultContainer{
+    background-color: #dedede;
+    border-radius: 1em;
+    grid-template-rows: auto auto 262px;
+    height: 394px;
+    :last-child{
+        border: none;
+    }
+   
+}
+

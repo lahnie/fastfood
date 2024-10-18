@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Poppins;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+.header{
+    background-color: #ababab;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    font-size: large;
+
+    a{
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+    }
+}
+
+.buttonBack{
+    background-color: #7b1e21;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0.5em 0;
+    padding: 0.5em 4em;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #7b1e21;
+    border-radius: 50px;
+    transform: translateY(0);
+    opacity: 1;
+    animation: smoothSlideUp 1s ease-out;
+}
+
+h1{
+    font-size: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 9vw;
+    }
+
+    .buttonBack{
+        margin-left: -25px;
+    }
+}

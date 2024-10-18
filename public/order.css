@@ -1,0 +1,121 @@
+.parent{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.pageheader {
+    display: block;
+}
+
+section#contactForm {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+
+    .container.contacto{
+        padding: 3em;
+        width: 80%;
+        h3{
+            font-size: 70px;
+            text-align: center;
+        }
+    }
+
+    .container.contacto{
+        padding: 1em;
+
+        h3{
+            margin: 1%;
+        }
+
+
+    }
+
+    .formLayout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6%;
+
+       
+    }
+    .fgroup{
+        padding: 1em 0em;
+        
+        label{
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: inline-block;
+
+            b{
+                font: revert;
+                font-size: x-large;
+                font-weight: 500;
+            }
+        }
+
+        .finput{
+            font-size: 20px;
+            border-radius: 5px;
+            height: 55px;
+            width: 100%;
+            border-color: #dedede;
+            background-color: #dedede;
+            border: none;
+
+            &.textArea{
+                height: unset;
+            }
+        }
+    }
+    
+    .buttonBox{
+        display: flex;
+        gap: 6%;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-content: space-between;
+        padding: 2em;
+        .botonEnviarMensaje{
+                background-color: #7b1e21;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 0.5em 0;
+                padding: 0.5em 4em;
+                display: inline-block;
+                text-decoration: none;
+                border: 2px solid #7b1e21;
+                border-radius: 50px;
+                transform: translateY(0);
+                opacity: 1;
+                animation: smoothSlideUp 1s ease-out;
+        }
+    }
+
+
+}
+
+@keyframes smoothSlideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width : 480px){
+   
+    section#contactForm {
+        .formLayout{
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+
+        .container.contacto{
+            h3{
+                font-size: 40px;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+}

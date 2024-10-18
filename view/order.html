@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link rel="icon" type="image/png" href="/fastfood/public/carritosfastfoodlogo.png"/>
+    <link rel="stylesheet" href="../public/main.css">
+    <link rel="stylesheet" href="../public/order.css">
+    <title>Formulario de Cotización</title>
+</head>
+
+<body>
+    <div class="parent">
+        <header class="header">
+            <div class="pageHeader">
+                <a href="/fastfood/index.html">Carritos Fast Food</a>
+            </div>
+        </header>
+
+        <section id="contactForm">
+
+            <div class="container contacto">
+                <h1>Formulario de Cotización</h1>
+                <form id="miForm">
+                    <div class="formLayout">
+                        <div class="left">
+                            <div class="fgroup">
+                                <label for="inputName"><b>Nombre</b></label>
+                                <input type="text" class="finput" id="inputName" placeholder="Jane" required>
+                            </div>
+                            <div class="fgroup">
+                                <label for="inputRut"><b>Rut</b></label>
+                                <input type="text" class="finput" id="inputRut" placeholder="Doe" required>
+                            </div>
+
+                            <div class="fgroup">
+                                <label for="inputEmail"><b>Dirección</b></label>
+                                <input type="text" class="finput" id="inputAddress" placeholder="Direccion" required>
+                            </div>
+
+                            <div class="fgroup">
+                                <label for="inputPhoneNumber"><b>Teléfono</b></label>
+                                <input type="number" class="finput" id="inputPhoneNumber" placeholder="Telefono"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="right">
+
+                            <div class="fgroup">
+                                <label for="productName"><b>Nombre producto</b></label>
+                                <textarea class="finput textArea" rows="5" cols="50" id="inputProductName"
+                                    required></textarea>
+                            </div>
+
+                            <div class="fgroup">
+                                <label for="inputPrice"><b>Valor total producto</b></label>
+                                <input type="number" class="finput" id="inputValue" placeholder="Escriba un monto"
+                                    required>
+                            </div>
+
+                            <div class="fgroup">
+                                <label for="productDescription"><b>Especificaciones producto</b></label>
+                                <textarea class="finput textArea" rows="5" cols="50" id="inputProductDescription"
+                                    required></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="buttonBox">
+                        <button type="submit" class="botonEnviarMensaje" id="btnCotizar">Cotizar</button>
+                        <a class="buttonBack" href="/fastfood/index.html">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer id="footer"></footer>
+    </div>
+
+    <script src="../models/order.js"></script>
+</body>
+
+</html>
