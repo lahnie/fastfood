@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="/fastfood/public/carritosfastfoodlogo.png" />
     <link rel="stylesheet" href="../public/main.css">
     <link rel="stylesheet" href="../public/order.css">
+    <link rel="stylesheet" href="../public/modal.css">
     <title>Formulario de Cotización</title>
 </head>
 
 <body>
     <div class="parent">
         <header class="header">
-            <div class="pageHeader">
+            <nav class="pageNav">
                 <a href="/fastfood/index.html">Carritos Fast Food</a>
-            </div>
+                <div class="config">
+                    <i class="fas fa-cog" id="configBtn"></i>
+                    <div class="configMenu" id="configMenu" >
+                        <ul>
+                            <li id="openModal">
+                                <i class="fa-solid fa-ban"></i>
+                                <p>Palabras Restringidas</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <section id="contactForm">
@@ -65,7 +78,7 @@
                             <div class="fgroup">
                                 <label for="productDescription"><b>Especificaciones producto</b></label>
                                 <textarea class="finput textArea" rows="5" cols="50" id="inputProductDescription"
-                                    required></textarea>
+                                    required oninput="validateDescription(this)"></textarea>
                             </div>
 
                         </div>
@@ -81,7 +94,27 @@
         <footer id="footer"></footer>
     </div>
 
+    <dialog id="modalRW">
+        <section class="modalHeader">
+            <h2>Palabras Restringidas</h2>
+            <i><i class="fa-solid fa-xmark" id="closeModal"></i></i>
+        </section>
+        <section class="modalContent">
+            <div class="groupC">
+                <h3>Agregar Palabra</h3>
+                <div class="bgRow">
+                    <input type="text" placeholder="Escriba una palabra..." id="inputWord">
+                    <button class="btnFill" id="btnAddWord">Agregar</button>    
+                </div>
+            </div>
+            <div class="groupRUD">
+                <h3>Palabras Restringidas</h3>
+                <div class="list" id="listWords"></div>
+            </div>
+        </section>
+    </dialog>
     <script src="../models/order.js"></script>
+    <script src="../models/wordManager.js"></script>
 </body>
 
-</html>
+</html>  
