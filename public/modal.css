@@ -1,0 +1,136 @@
+dialog#modalRW {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 40vw;
+
+    h2 {
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: #9FA6AD;
+        margin: 0;
+    }
+
+    h3{
+        font-weight: 400;
+        font-size: 1rem;
+        color: #464D53;
+        margin: 0;
+    }
+
+    .btnFill{
+        background-color: #7b1e21;
+        border: 2px solid #7b1e21;
+        color: white;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 50px;
+        padding: 0.6em 1.7em;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #a0080f;
+        }
+    }
+
+    .btnIcon{
+        background-color: transparent;
+        color: white;
+        font-size: 0.9rem;
+        border: none;
+        padding: 0.7em 0.7em;
+        cursor: pointer;
+        
+        i{
+            color: #9FA6AD ;
+        }
+
+        &:hover i{
+            color: #7b1e21;
+        }
+    }
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #ccc;
+
+    i{
+        color: #9FA6AD;
+        cursor: pointer;
+
+        &:hover{
+            color: #FF6861;
+        }
+    }
+}
+
+.modalContent {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.bgRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F2F3;
+    border-radius: 50px;
+    padding-left: 1rem;
+    margin: 0.8rem 0;
+    
+    input{
+        border: none;
+        background-color: transparent;
+        width: 70%;
+        padding: 0.5rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        color: #464D53;
+    }
+
+    input::placeholder{
+        color: #464D53;
+    }
+
+    input:focus{
+        outline: none;
+    }
+}
+
+.list {
+    margin: 0.8rem 0;
+    background-color: #F4F3F8;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+}
+
+.word {
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.6rem ;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #464D53;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    dialog#modalRW  {
+        width: 80vw;
+    }
+}
