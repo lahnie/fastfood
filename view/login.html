@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link rel="icon" type="image/png" href="/fastfood/public/carritosfastfoodlogo.png"/>
+    <link rel="stylesheet" href="../public/login.css">
+    <title>Login Carritos Fast Food</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="hero">
+            <div class="left">
+                <img class="logo" src="/fastfood/public/carritosfastfoodlogo.png" alt="Carritos Fast Food Logo">
+            </div>
+            <section id="contactForm">
+                <div class="right">
+                    <h1>Bienvenido</h1>
+                    <h2>Inicie sesión para continuar.</h2>
+                    <form action="">
+                        <div class="fgroup">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="text" class="finput" id="email" placeholder="ej.correo@gmail.com" required>
+                        </div>
+                        <div class="fgroup">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="text" class="finput" id="password" placeholder="**************" required>
+                        </div>
+                        <div class="box-visible">
+                            <input type="checkbox" class="mycheck" id="visible">
+                            <label for="visible">Mostrar Contraseña</label>
+                        </div>
+                        <button class="botonEnviarMensaje"  type="submit" id="submit">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../models/login.js"></script>
+</body>
+</html>
