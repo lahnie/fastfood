@@ -1,6 +1,6 @@
 async function getOrders() {
   const dateFilter = document.getElementById("dateFilter");
-  const url = `/fastfood/data/orders.php?dateFilter=${dateFilter.value}`;
+  const url = `../data/orders.php?dateFilter=${dateFilter.value}`;
 
 
   try {
@@ -23,7 +23,7 @@ async function drawOrders() {
   for (let index = 0; index < orders.length; index++) {
     const order = orders[index];
 
-    const orderTemplate = `<a class="resultAnchor" href="/fastfood/view/orderDetailView.html?orderNumber=${order.id}">
+    const orderTemplate = `<a class="resultAnchor" href="../view/orderDetailView.html?orderNumber=${order.id}">
                 <div class="result">
                     <div class="numeropedido">pedido #${order.id}</div>
                     <div class="fecha">${order.created_date}</div>

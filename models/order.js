@@ -18,7 +18,7 @@ cotizar.addEventListener("click", async (e) => {
     "inputProductDescription"
   );
 
-  const rawResponse = await fetch("/fastfood/data/createOrder.php", {
+  const rawResponse = await fetch("../data/createOrder.php", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -43,7 +43,7 @@ cotizar.addEventListener("click", async (e) => {
 
   const json = await rawResponse.json();
 
-  const orderDetailViewURL = `/fastfood/view/orderDetailView.html?orderNumber=${json.id}`;
+  const orderDetailViewURL = `../view/orderDetailView.html?orderNumber=${json.id}`;
 
   window.location.replace(orderDetailViewURL);
 });

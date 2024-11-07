@@ -1,9 +1,9 @@
 <?php
 
-$host="aps.pregps.cl";
-$usuario="fastfood";
-$password="fastfood2024";
-$db="fastfood";
+$host="kddp.cl";
+$usuario="ckd7887_kddpdos";
+$password="iPmWyBUmstmpBb6FWx";
+$db="ckd7887_kddpdos";
 
 
 // if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
